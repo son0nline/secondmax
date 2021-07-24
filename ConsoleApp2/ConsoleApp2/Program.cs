@@ -22,6 +22,8 @@ namespace ConsoleApp2
 
     public class Giaithuat
     {
+        // tự sắp xếp rồi tự tìm
+        // sinh viên cùi
         public int c1(int[] ls)
         {
             int temp = 0;
@@ -54,6 +56,8 @@ namespace ConsoleApp2
 
         private int GetSecordMax(int[] ls)
         {
+            // dãy đã được xắp sếp
+            // pt 0 là max
             int secord = ls[0];
             for (int i = 1; i < ls.Length; i++)
             {
@@ -66,6 +70,7 @@ namespace ConsoleApp2
             return secord;
         }
 
+        // đi làm
         public int c2(int[] ls)
         {
             Array.Sort(ls);
@@ -74,6 +79,7 @@ namespace ConsoleApp2
         }
 
         // không dùng pp sắp xếp
+        // có tí gọi là giải thuật
         public int c3(int[] ls)
         {
             int first, secord;
