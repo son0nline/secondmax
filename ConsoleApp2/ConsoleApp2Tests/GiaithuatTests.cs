@@ -6,20 +6,20 @@ namespace ConsoleApp2.Program.Tests
     public class GiaithuatTests
     {
 
-        ConsoleApp2.Giaithuat giaithuat = new Giaithuat();
+        ConsoleApp2.GiaithuatSecondMax giaithuat = new GiaithuatSecondMax();
 
         [TestMethod()]
         public void c1Test()
         {
             int[] ls = { 9, 1, 3, 5, 8, 2, 4 };
-            Assert.AreEqual(giaithuat.c1(ls), 8);
+            Assert.AreEqual(8, giaithuat.c1(ls));
         }
 
         [TestMethod()]
         public void c2Test()
         {
             int[] ls = { 9, 1, 3, 5, 8, 2, 4 };
-            Assert.AreEqual(giaithuat.c2(ls), 8);
+            Assert.AreEqual(8, giaithuat.c2(ls));
         }
 
 
@@ -31,14 +31,14 @@ namespace ConsoleApp2.Program.Tests
             //int[] ls = { 1, 3, 5, 4, 5 };
             //int[] ls = { 5, 4, 5 };
             int[] ls = { 9, 1, 3, 5, 8, 2, 4 };
-            Assert.AreEqual(giaithuat.c3(ls), 8);
+            Assert.AreEqual(8, giaithuat.c3(ls));
         }
 
         [TestMethod()]
         public void c3Test1()
         {
             int[] ls = { 1, 2, 3, 4, 5 };
-            Assert.AreEqual(giaithuat.c3(ls), 4);
+            Assert.AreEqual(4, giaithuat.c3(ls));
         }
 
 
@@ -46,7 +46,7 @@ namespace ConsoleApp2.Program.Tests
         public void c3Test2()
         {
             int[] ls = { 1, 3, 5, 4, 2 };
-            Assert.AreEqual(giaithuat.c3(ls), 4);
+            Assert.AreEqual(4, giaithuat.c3(ls));
 
         }
 
@@ -55,14 +55,14 @@ namespace ConsoleApp2.Program.Tests
         public void c3Test3()
         {
             int[] ls = { 5, 4, 3, 2, 1 };
-            Assert.AreEqual(giaithuat.c3(ls), 4);
+            Assert.AreEqual(4, giaithuat.c3(ls));
         }
 
         [TestMethod()]
         public void c3Test4()
         {
             int[] ls = { 5, 4, 5 };
-            Assert.AreEqual(giaithuat.c3(ls), 4);
+            Assert.AreEqual(4, giaithuat.c3(ls));
         }
 
         [TestMethod()]
@@ -70,7 +70,7 @@ namespace ConsoleApp2.Program.Tests
         {
             // test trùng số trong list
             int[] ls = { 9, 9, 2, 3, 4, 8, 5, 6, 7, 9 };
-            Assert.AreEqual(giaithuat.c3(ls), 8);
+            Assert.AreEqual(8, giaithuat.c3(ls));
         }
     }
 }
